@@ -36,7 +36,7 @@ function ButtonType(props: any) {
   );
 }
 
-const MyComponent = ({ isIos, text }) => {
+const TextType = ({ isIos, text }) => {
   // isIos 값에 따라 동적으로 클래스를 결정
   const dynamicClasses = isIos
     ? "text-center text-blue-500 bg-red-300"
@@ -62,7 +62,7 @@ export default function test() {
       <ButtonType className={BUTTON_VARIANTS.secondary} text="버튼이지용2" />
       <ButtonType className={BUTTON_VARIANTS.danger} text="버튼이지용3" />
 
-      <MyComponent isIos={true} text="아이폰" />
+      <TextType isIos={true} text="아이폰" />
     </div>
   );
 }
